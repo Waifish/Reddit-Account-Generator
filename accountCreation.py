@@ -41,7 +41,7 @@ finalName = name+str(randomNumber)
 time.sleep(1)
 # NAME GENERATION FINISHED
 #Append account to text file
-more_lines =['','username:',finalName,'','password:',password]
+more_lines =['\n','username:',finalName,'','password:',password]
 with open('accountList.txt','a')as f:
     f.writelines('\n'.join(more_lines))
 # REDDIT ACCOUNT CREATION
